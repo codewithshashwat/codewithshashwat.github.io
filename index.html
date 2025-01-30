@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashwat Pritish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="heading">
+                <h1>Shashwat Pritish</h1>
+            </div>
+            <div class="lists">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="left">
+                <h1>Hi,</h1>
+                <h1>I'm Shashwat Pritish</h1><br>
+                <h2 id="iama">I am a</h2>
+                <h2 id="skills"></h2>
+                <br><br><br>
+                <button class="neon-button"><a href="mailto:pritishshashwat@gmail.com">Mail Me!</a></button>
+                <button class="neon-button"><a href="Shashwat Pritish.pdf" download="Shashwat-Pritish">Download PDF</a></button>
+            </div>
+            <div class="right">
+                <img src="photo.png" alt="" width="400px">
+            </div>
+        </section>
+        <hr class="divider">
+        <section id="about">
+            <h1 id="abouth1">About Me</h1>
+            <div class="content">
+                <div class="left">
+                    <img src="./subject.jpg" alt="Subject" width="400px">
+                </div>
+                <div class="right">
+                    <h1>Something about me</h1>
+                    <p id="about-content">I’m Shashwat Pritish, a dedicated coder and web developer from India <img
+                            src="in.png" alt=""> with a passion for building innovative and efficient digital solutions
+                        💻✨. With expertise in frameworks like Django and React ⚙️, I specialize in creating dynamic,
+                        user-friendly websites and applications that make an impact 🌐🚀.</p>
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <section id="projects">
+            <div class="projects-container">
+                <h2>My Projects</h2>
+
+                <div class="project-card">
+                    <img src="todotaskify.webp" alt="Project 1" class="project-image">
+                    <div class="project-info">
+                        <h3>Todo Taskify</h3>
+                        <p>This is a todo app made in react.</p>
+                        <ul class="tech-stack">
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <a href="https://todotaskifyapp.netlify.app/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="blog.png" alt="Project 2" class="project-image">
+                    <div class="project-info">
+                        <h3>iCoder</h3>
+                        <p>A clean and minimal blog app using Django</p>
+                        <ul class="tech-stack">
+                            <li>Django</li>
+                            <li>Material CSS</li>
+                        </ul>
+                        <a href="https://github.com/shashwatpritish/iCoder" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="tunajaneabc.png" alt="Project 2" class="project-image">
+                    <div class="project-info">
+                        <h3>TunajaneABC</h3>
+                        <p>A spell corrector app made using NLP and Django</p>
+                        <ul class="tech-stack">
+                            <li>Django</li>
+                            <li>NLP</li>
+                        </ul>
+                        <a href="https://github.com/shashwatpritish/TunajaneABC" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Django</h3>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="divider">
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:shashwat@example.com">shashwat@example.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+911234567890">+91 123 456 7890</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/shashwat" target="_blank">linkedin.com/in/shashwat</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/shashwat" target="_blank">github.com/shashwat</a></p>
+                </div>
+            </div>
+        </section>
+        
+        
+
+    </main>
+</body>
+<script src="./fontawesome.js"></script>
+<script>
+    const textList = [" Web Developer ", " UI Designer ", " Content Creator ", " Video Editor "];
+    const typingElement = document.getElementById('skills');
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typingSpeed = 100; // Speed for typing characters
+    const deletingSpeed = 50; // Speed for deleting characters
+    const pauseBeforeDeleting = 1000; // Pause after typing before deleting
+    const pauseBeforeNextText = 500; // Pause before starting the next text
+
+    function typeText() {
+        const currentText = textList[textIndex];
+
+        if (isDeleting) {
+            typingElement.textContent = currentText.substring(0, charIndex--);
+        } else {
+            typingElement.textContent = currentText.substring(0, charIndex++);
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(typeText, pauseBeforeDeleting); // Pause before deleting
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textList.length; // Move to the next text
+            setTimeout(typeText, pauseBeforeNextText); // Pause before next text
+        } else {
+            setTimeout(typeText, isDeleting ? deletingSpeed : typingSpeed);
+        }
+    }
+
+    typeText();
+</script>
+</body>
+
+</html>
