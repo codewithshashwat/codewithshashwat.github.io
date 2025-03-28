@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+<link rel="stylesheet" href="utilities.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Shashwat</a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="home" class="hero">
+        <div class="image">
+            <img src="photo.png" alt="My Photo">
+        </div>
+        <div class="hero-content">
+            <h1 class="poppins-bold">Hi, I'm Shashwat</h1>
+            <p class="poppins-regular">Web Developer | UI/UX Enthusiast</p>
+            <a href="#contact" class="btn poppins-medium">Get in Touch</a>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="image.jpg" alt="Shashwat Profile">
+            </div>
+            <div class="about-content">
+                <h2 class="poppins-bold">About Me</h2>
+                <p class="poppins-regular">I'm a passionate web developer who loves creating clean, efficient, and visually appealing web experiences. I specialize in front-end technologies and UI/UX design.</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="icons/html.png" alt="HTML">
+                        <p class="poppins-medium">HTML</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="icons/css.png" alt="CSS">
+                        <p class="poppins-medium">CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="icons/js.png" alt="JavaScript">
+                        <p class="poppins-medium">JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="icons/react.png" alt="React">
+                        <p class="poppins-medium">React</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="icons/django.png" alt="Django">
+                        <p class="poppins-medium">Django</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="poppins-bold">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="poppins-semibold">Project 1</h3>
+                    <p class="poppins-regular">A responsive web app built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="btn poppins-medium">View on Github</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="poppins-semibold">Project 2</h3>
+                    <p class="poppins-regular">A React-based app with interactive UI.</p>
+                    <a href="#" class="btn poppins-medium">View on Github</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="poppins-semibold">Project 3</h3>
+                    <p class="poppins-regular">A Django-powered backend project.</p>
+                    <a href="#" class="btn poppins-medium">View on Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+    <div class="container">
+        <h2 class="poppins-bold">Contact Me</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+                <h3 class="poppins-semibold">Email</h3>
+                <p class="poppins-regular">shashwat@example.com</p>
+            </div>
+            <div class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone Icon">
+                <h3 class="poppins-semibold">Phone</h3>
+                <p class="poppins-regular">+91-9876543210</p>
+            </div>
+            <div class="contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon">
+                <h3 class="poppins-semibold">Location</h3>
+                <p class="poppins-regular">Patna, India</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        hamburger.classList.toggle('open');
+    });
+</script>
+</html>
